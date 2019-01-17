@@ -47,4 +47,4 @@ $ sudo systemctl enable powerbutton.service
 # Contributors
 
 1. [Akhil A](https://github.com/theonlyakhil)
-2. [Sashwat K](https://github.com/sashuu6)
+2. [Sashwat K](https://www.sashwat.in)
