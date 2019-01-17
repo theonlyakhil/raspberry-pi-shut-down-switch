@@ -6,8 +6,8 @@
 
 # Author: Sashwat K
 # Created On: 13 Oct 2018
-# Revision: 1
-# Last Edited: 13 Oct 2018
+# Revision: 2
+# Last Edited: 17 Jan 2019
 
 import RPi.GPIO as GPIO
 import subprocess
@@ -15,5 +15,5 @@ import subprocess
 while True:
 	if GPIO.input(4):
         #print("Performing Shitdown...")
-        cmd = "sudo halt"
+        cmd = "sudo poweroff"
         subprocess.check_output(cmd, shell = True )
