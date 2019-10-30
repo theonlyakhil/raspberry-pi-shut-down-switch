@@ -10,11 +10,11 @@
 # Revision: 2
 # Last Edited: 17 Jan 2019
 
-import RPi.GPIO as GPIO
-import subprocess
+import RPi.GPIO as GPIO # added GPIO library
+import subprocess # subprocess library
 
 while True:
-	if GPIO.input(4):
+	if GPIO.input(4): 
         #print("Performing Shitdown...")
-        cmd = "sudo poweroff"
+        cmd = "sudo shutdown -h now"
         subprocess.check_output(cmd, shell = True )
